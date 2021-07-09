@@ -8,10 +8,21 @@ void main() {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Coffee memo app'),
-          backgroundColor: Colors.blue[900],
+          backgroundColor: Colors.blue[100],
         ),
         body: Center(
-          child: Image.asset('images/icelandscape.png'),
+          child: Padding(
+            padding: const EdgeInsets.all(54.0),
+            child: Column(children: [
+              Image.asset('images/icelandscape.png'),
+              Text(
+                'hello coffee...',
+                style: TextStyle(
+                  fontSize: 100,
+                ),
+              )
+            ]),
+          ),
         ),
       ),
     ),
